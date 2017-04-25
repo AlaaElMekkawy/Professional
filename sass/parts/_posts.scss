@@ -1,0 +1,207 @@
+
+/*
+
+
+posts formats
+===============================================
+standard post format
+=======================
+*/
+
+.alaa-standard-format {padding-top:25px; padding-bottom:25px;
+  h2 {
+    font-size: 35px;
+    font-weight: 200;
+    color: $black;
+    a {color:$main-color}
+    &.entry-title {
+      line-height: 1.5em;
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width:50px;
+        height:2px;
+        background: $main-color;
+        bottom:10px;
+      }
+      &:before {
+        margin-right: 10px;
+      }
+      &:after {
+        margin-left: 10px;
+      }
+
+    }
+  }
+}
+
+
+
+
+.alaa-standard-format{
+  .standard-featured {height:300px; position:relative;margin-top:15px; margin-bottom:15px;
+    &:before{ content:''; display: inline-block; position: absolute; top:0; bottom:0; right:0; left:0; background: rgba(0,0,0,.2); box-shadow: 0 0 20px $light-gray; @include transition( all, 500ms);
+
+    }
+  }
+}
+
+.alaa-standard-format{
+  .standard-featured {
+    &:hover{
+      &:before{ background: rgba(0,0,0,0); }
+    }
+
+  }
+}
+
+
+.alaa-standard-format{
+  .entry-content p {
+    font-size:1.2em;
+  }
+}
+
+
+.entry-excerpt{
+  margin: 30px 0 16px;
+  p {
+    font-size: 17px;
+    line-height:1.5em;
+    font-weight: 300;
+
+  }
+}
+
+
+.button-container{
+  margin:20px;
+}
+
+
+
+.entry-meta{
+  font:{
+    size: 13px;
+    weight: 300;
+  }
+  color:$light-gray;
+  a {
+    font-weight: 500 ; color:$light-gray;
+    &:hover, &:focus { color:$dark-gray}
+  }
+}
+
+
+.post-meta {
+  font-size: 80%;
+  display: block;
+  padding-bottom: 15px;
+  opacity: 0.8;
+  a {color: $dark-gray;}
+  span.fa {margin-right: 4px;}
+  span, time {margin-right: 8px;}
+}
+
+
+.entry-footer {padding:10px 5px; border-bottom:1px solid #ccc;
+  .tag-list {
+    a {padding: 0 5px;}
+
+  }
+
+}
+
+
+
+
+/*
+      aside post format
+====================================
+*/
+
+.alaa-aside-format{
+  background:#eee;padding:30px 20px ; box-shadow:0 0 10px rgba(0,0,0,.2);margin-top: 20px;
+
+  .post-meta{text-align: left;}
+
+  .seemore a{ color:$main-color; padding-right:15px;
+    &:hover{ color:$dark-gray;}
+  }
+
+}
+
+
+
+
+
+
+
+
+/*
+      Single post format
+====================================
+*/
+
+.alaa-single-post-format {padding-top:20px; padding-bottom:20px;
+  h2 {
+    font-size: 35px;
+    font-weight: 200;
+    color: $main-color;
+    a {color:$main-color}
+    &.entry-title {
+      line-height: 1.5em;
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width:50px;
+        height:2px;
+        background: $main-color;
+        bottom:10px;
+      }
+      &:before {
+        margin-right: 10px;
+      }
+      &:after {
+        margin-left: 10px;
+      }
+
+    }
+  }
+}
+
+
+
+.alaa-single-post-format{
+  .standard-featured {width:100%; height:auto; position:relative;margin-top:15px; margin-bottom:15px;
+    img{ width:100%; height:auto; }
+  }
+  .entry-content{
+    width:90%;
+    margin:-80px auto 0;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+    p {
+      line-height: 1.5em;
+      font-weight: 300;
+      text-align: justify;
+    }
+
+  }
+}
+
+
+
+
+
+.page-header {
+  h2 {
+    font-size:35px;
+  }
+
+}
+

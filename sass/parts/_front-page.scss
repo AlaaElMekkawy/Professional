@@ -1,0 +1,386 @@
+
+
+
+
+/*
+front-blog
+=======================
+*/
+
+.front-blog{
+  background: #fff;
+  .posts{padding-top:20px;
+
+  }
+  .entry-figure{overflow: hidden;
+    &:hover{ .standard-featured{@include transform (scale(1.2));opacity: 1}}
+  .standard-featured{background-color:#000; width:100%;height:300px;opacity: .9; @include transition( all, 1000ms);
+
+  }
+  }
+}
+
+
+.woo-front{padding-bottom: 20px;}
+
+
+
+/*--------------------------------------------------------------
+## Featured Post
+--------------------------------------------------------------*/
+
+
+#al-featured-post-section{
+  background: #fff;
+
+}
+.al-featured-post-wrap{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.al-featured-post{
+  display: table-cell;
+  width: 100%;
+  padding:50px 30px;
+  position: relative;
+}
+.al-featured-post .al-featured-icon{
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+.al-featured-post h3{
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.al-featured-post h3:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background: #0cc;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:10px;
+}
+
+.al-featured-readmore{
+  position: absolute;
+  bottom: -15px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 26px;
+  color: #555;
+  opacity: .3;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.al-featured-post:hover .al-featured-readmore{
+  opacity: 1;
+}
+.al-featured-post .al-featured-readmore:hover{
+  color: #5bc2ce;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+## skills Post
+--------------------------------------------------------------*/
+
+
+.alaa-skills{ background: #eee;
+  .skills-title{padding-top:50px ; text-align: left}
+  .skills-info{padding:20px 20px 0 0; text-align: left;}
+  .skills{padding:20px 10px 0;
+    .skill-name {margin:0;}
+  }
+
+}
+
+.progress{background: #e5e5e5;overflow: visible; height:3px;margin-bottom:35px;
+  .progress-bar{text-align: right; padding-right: 10px; width: 0%;background-color:$main-color;Position:relative;
+    span{position:absolute;top: -17px;
+      color: #333; right: 0px;}
+
+  }
+}
+
+
+
+
+/*
+===============================================
+client
+===============================================
+*/
+
+
+.client{background: #eee;
+  .sec-title{margin-bottom: 15px}
+
+  p{ width:80%; margin:0 auto 30px;}
+  .client-logo {padding:20px 0;margin: 0;
+    .logo{height:150px;padding:40px}
+    img{width:100%;height:100%;}
+  }
+}
+
+
+/*
+===============================================
+slick Slider
+===============================================
+*/
+
+.alaa-testimonial{background: #eee;
+
+  .slider{width:100%;margin: auto;
+    .item{
+      width:100%;
+
+      img{display:inline-block; width:120px; height:120px; margin:20px 0}
+      blockquote{border:none; text-align: justify; font-size: 15px;}
+      span{display:block; font-size: 20px;text-align: center; color:#777}
+    }
+  }
+}
+
+
+.slick-prev{left:30px;z-index: 200}
+.slick-next{right:30px;z-index: 200}
+
+
+.slick-next:before{content:'\f178'; }
+.slick-prev:before{content:'\f177'; }
+.slick-next:before, .slick-prev:before{
+  font-family: 'FontAwesome',sans-serif;
+  color:#999;
+  z-index: 200;
+  &:hover{color:#333;}
+}
+
+
+
+/*
+===============================================
+projects
+===============================================
+*/
+
+.alaa-projects{
+  .projects{
+    .project {
+      @include shadow(0, 0, 5px, 1px, #ccc);
+      margin:20px;
+      h4{
+        padding:10px 0; background:#eee ;
+      }
+      .project-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+      }
+      img {
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        @include transition(all, 3000ms)
+      }
+
+    }
+
+  }
+
+}
+
+
+
+/*
+===============================================
+jssor slider
+===============================================
+*/
+
+   /* jssor slider bullet navigator skin 01 css */
+   /*
+   .jssorb01 div           (normal)
+   .jssorb01 div:hover     (normal mouseover)
+   .jssorb01 .av           (active)
+   .jssorb01 .av:hover     (active mouseover)
+   .jssorb01 .dn           (mousedown)
+   */
+ .jssorb01 {
+   position: absolute;
+ }
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+  position: absolute;
+  /* size of bullet elment */
+  width: 12px;
+  height: 12px;
+  filter: alpha(opacity=70);
+  opacity: .7;
+  overflow: hidden;
+  cursor: pointer;
+  border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+.jssora03l.jssora03ldn      (disabled)
+.jssora03r.jssora03rdn      (disabled)
+*/
+.jssora03l, .jssora03r {
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  background: url('../images/slideshow/a03.png') no-repeat;
+  overflow: hidden;
+}
+.jssora03l { background-position: -3px -33px; }
+.jssora03r { background-position: -63px -33px; }
+.jssora03l:hover { background-position: -123px -33px; }
+.jssora03r:hover { background-position: -183px -33px; }
+.jssora03l.jssora03ldn { background-position: -243px -33px; }
+.jssora03r.jssora03rdn { background-position: -303px -33px; }
+.jssora03l.jssora03lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+.jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+
+
+
+/*
+===============================================
+departments
+===============================================
+*/
+
+.departments{margin-top:10px;
+  .item {
+    position: relative;
+    background: #000;
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-height: 200px;
+      opacity: .5;
+      @include transition(all, 1000ms);
+
+    }
+    h3 {
+      position: absolute;
+      top: 50%;
+      @include transform(translateY(-50%));
+      width: 100%;
+      background: rgba(0, 0, 0, .6);
+      text-align: center;
+      font-size: 22px;
+      height: 50px;
+      line-height: 50px;
+      color: #aaa;
+      overflow: hidden;
+      text-transform: capitalize;
+      margin: 0;
+      @include transition(all, 1000ms);
+    }
+    &:hover {
+      img {
+        opacity: .9;
+        @include transform(scale(1.1))
+      }
+      h3 {
+        @include transform(translateY(-50%) rotateY(90deg));
+        opacity: 0;
+      }
+    }
+  }
+
+}
+
+
+
+/*
+===============================================
+new items
+===============================================
+*/
+
+.new-items{
+  border:3px solid #ddd;
+  padding:60px 20px 0;
+  position:relative;
+  display: flex;
+  align-items: stretch;
+
+  h2{
+    position:absolute;
+    left:20px;
+    top:-20px;
+    font-family:$title-family;
+    font-size:20px;
+    padding:0 20px;
+    color:#333;
+    border:3px solid #ddd;
+    z-index: 100;
+    margin:0;
+    line-height:30px;
+    background:#fff;
+    text-transform: uppercase;
+  }
+
+}
+
+
+.advert {
+  min-height:150px;
+  width:100%;
+  padding: 30px 50px;
+  background: radial-gradient(circle, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/72.jpg') center center;
+  display: flex;
+  align-content: center;
+
+  .feature{
+    align-content: center;
+    h2 {
+    color: #aaa;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
+  }
+  }
+
+  .info { border-left: 5px solid #aaa;
+    p {
+    color: #ccc;
+    padding: 10px 20px;
+
+
+  }
+}
+}
+

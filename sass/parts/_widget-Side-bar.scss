@@ -1,0 +1,112 @@
+
+
+
+
+
+
+/*
+Side bar
+=======================
+*/
+
+.side-bar{
+  margin-top:100px;
+  aside {
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    padding:20px;
+    margin-top:20px;
+    border:1px solid #eee;
+    .screen-reader-text, .search-submit{display: none;}
+    .widget-title {
+      position: relative;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 30px;
+        background: #5bc2ce;
+        height: 2px;
+      }
+    }
+
+    li{
+      list-style: none;
+
+
+    }
+    .price_slider_wrapper{padding-top:20px;}
+  }
+
+}
+
+
+
+/*
+ shop woo-widget
+=======================
+*/
+.woo-widget{
+  margin-top:100px;
+  img{height:350px;}
+  aside {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    .widget-title {
+      position: relative;
+      padding-bottom: 7px;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 30px;
+        background: #5bc2ce;
+        height: 2px;
+      }
+    }
+
+    li {
+      list-style: none;
+
+    }
+
+  }
+}
+
+
+
+/*
+footer-widget
+=======================
+*/
+
+
+
+.site-footer{
+  padding-top:30px;
+
+  aside {
+    .widget-title{ color:#ddd; text-transform: uppercase;border-bottom: 1px solid $light-gray; padding-bottom: 3px; padding-left:25px; font-weight:600}
+
+    .textwidget{color:$light-gray}
+
+   ul li{
+      list-style: none;
+
+      a{ color:$light-gray;
+        &:hover{color:$main-color}}
+      i{ font-size: 1.5em; padding:5px}
+
+
+
+    }
+
+  }
+
+
+}

@@ -1,0 +1,90 @@
+
+
+/*
+===============================================
+contact pag (google map)
+===============================================
+*/
+
+.contact-map {
+  width: 100%;
+}
+.contact-map iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
+}
+.contact-map iframe.clicked{
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+## footer
+--------------------------------------------------------------*/
+
+
+
+.site-footer{
+  background:radial-gradient(circle, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../images/banner2.jpg') ; background-attachment: fixed; background-position: center center;background-repeat: no-repeat;background-size: cover;
+}
+
+
+
+
+
+  .footer-social {
+    border-top: 1px solid #aaa;
+    position: relative;
+    padding:0 20px;
+    margin: 0;
+  .social-nav, .contact-nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      margin-right: 5px;
+      text-align: center;
+      padding:20px 10px;
+      a{
+        text-decoration: none;
+        color: #ddd;
+        margin: 0;
+        &:hover{color:$main-color}
+      }
+    }
+  }
+}
+
+
+
+
+.footer-social ul.social-nav li a span{
+  font-size: 18px;
+}
+
+
+
+/*--------------------------------------------------------------
+## footer
+--------------------------------------------------------------*/
+
+.copyright{
+  color: #ddd;
+  padding:20px 10px;
+
+  a{
+    color:$main-color;
+
+  }
+}
+
+

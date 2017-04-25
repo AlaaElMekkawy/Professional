@@ -1,0 +1,280 @@
+
+/*
+    info box
+=============================================
+*/
+
+.top-header {
+    position: relative;
+    background:$main-color;
+    margin: 0;
+    font-size:14px;
+    .social-nav, .contact-nav{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding-right: 15px;
+
+        li{
+            display: inline-block;
+            line-height: 20px;
+            text-align: center;
+            padding:5px 10px;
+            &:hover {
+                a{
+                text-decoration: none;
+                color:$main-color;
+                margin: 0;
+            }
+        }
+    }
+}
+}
+
+
+
+/*
+    Navbar
+=============================================
+*/
+
+.site-header .nav-wrapper {
+    position: relative;
+    z-index: 99;
+    margin-top:135px;
+    .navbar-default {
+        background-color: #fff ;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+        position:relative;
+
+        .navbar-nav{float: none; display: inline-block;}
+
+        .navbar-brand {
+            position:absolute;
+            top:-120px;
+            left:50%;
+            transform:translateX(-50%);
+            h1{
+                font-size: 30px;
+                font-weight: 400;
+                margin: 10px;
+                font-family: 'Righteous', cursive;
+                text-transform: capitalize;
+                margin-bottom: 0;
+            }
+            p {
+                font-family: 'Righteous', cursive;
+                font-size: 17px;
+                color:#777;
+                word-spacing: 1px;
+                font-weight:200;
+                text-align: center;
+
+            }
+            &:hover{
+                h1, p {color:$main-color}
+            }
+
+        }
+    }
+    .navbar .navbar-nav li a {
+        line-height: 35px;
+        font-size: 14px;
+        font-family: $title-family;
+        &:hover{color:$main-color;}
+        &:active{color:$main-color;}
+
+    }
+}
+.navbar-header img{
+    display: block;
+    max-height: 65px;
+    width: auto;
+    margin-top: 8px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: $dark-gray;
+    &:hover {
+        color: $main-color;
+    }
+}
+
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{text-align: center  }
+
+
+
+.navbar-default .navbar-toggle{border-color:$main-color; float:none;;
+    .icon-bar{background-color:$main-color; }
+    &:hover, &:active, &:focus {background-color: $main-color;
+        .icon-bar{background-color:$white;}
+    }
+}
+
+
+/* Dropdown */
+.navbar-nav>li>.dropdown-menu{
+    padding: 0;
+}
+.navbar-nav ul.dropdown-menu {
+    position: absolute;
+    min-width: 201px;
+    height: auto;
+    border-radius: 0;
+    z-index: 199;
+    top: 100%;
+    color: #fff;
+    right: 0;
+    box-shadow: none;
+    margin: 0;
+    left: auto;
+    border: 1px solid #e4e4e4;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+.nav-wrapper .navbar .nav li.dropdown ul.dropdown-menu li {
+    background: #fafafa;
+}
+.nav-wrapper .navbar .nav li.dropdown ul.dropdown-menu li:last-child{
+    border-bottom: 0;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: $main-color  ;
+    text-decoration: none;
+    background: #f7f7f7;
+}
+.nav-wrapper .navbar .nav li.dropdown ul.dropdown-menu li a{
+    line-height: 37px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+	background-color: #f7f7f7;
+    color:$main-color;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background: transparent;
+    color: $main-color;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color:$main-color;
+}
+ul.dropdown-menu.dropdown-sub {
+    top: 0!important;
+    right: 100%!important;
+    padding: 0;
+}
+
+//search form in navigation
+#header-search-wrap {
+    background: #fff;
+    text-align: center;
+    transition: all 0.7s ease 0s;
+    margin-top: 10px;
+    .search-form label{
+        width: 100%;
+        position: relative;
+        .search-field {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 31px 40px ;
+            background: #eee;
+            text-align: center;
+            font-size: 15px;
+            outline: none;
+
+
+            &::-webkit-input-placeholder {
+               color: $light-gray;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               color: $light-gray;
+            }
+
+            &::-moz-placeholder {  /* Firefox 19+ */
+               color: $light-gray;
+            }
+
+            &:-ms-input-placeholder {
+               color: $light-gray;
+            }
+        }
+
+        .close{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 23px;
+            width: 26px;
+            font-size: 11px;
+            cursor: pointer;
+            opacity: 1;
+            border: 1px solid #ccc;
+            outline: 0;
+            color: #ccc;
+            &:hover{
+                color:$dark-gray;border-color:$dark-gray;background:transparent;
+            }
+        }
+    }
+}
+
+
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}
+
+.slow {
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+}
+
+/*
+=========================================
+     Pages navigations
+=========================================
+*/
+
+
+.nav-previous{float:left;}
+.nav-next{float:right;}
+.post-navigation{clear:both;margin:10px 0 0 0;overflow:hidden; }
+.post-navigation div{ display: block; position: relative;font-size: 14px;color: #999;}
+.post-previous{float: left; padding: 10px 0 10px 35px; text-align: left; }
+.post-next{ float: right; text-align: right;padding: 10px 35px 10px 0;}
+.post-navigation div span{display: block; font-size: 90%;	color: #999;}
+.post-navigation div a:after{ position: absolute; font-size: 40px;line-height: 60px;top:0;}
+.post-previous a:after{ content: "\f104 "; font-family: 'FontAwesome'; left:5px; color: $main-color;}
+.post-next a:after{ content: "\f105"; font-family: 'FontAwesome'; right:5px;color: $main-color ;}
+
+

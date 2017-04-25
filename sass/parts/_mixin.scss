@@ -1,0 +1,31 @@
+
+
+/*
+    Mixin
+=============================================
+*/
+
+@mixin transition ( $attr:all, $time:600ms){
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+@mixin transform ( $val ){
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+
+
+@mixin shadow ( $inst:0, $hoff:0, $voff:5px, $blur:1px, $color:#ccc ){
+  -webkit-box-shadow: $inst $hoff $voff $blur $color;
+  -moz-box-shadow: $inst $hoff $voff $blur $color;
+  box-shadow: $inst $hoff $voff $blur $color;
+}
+
+
+
+

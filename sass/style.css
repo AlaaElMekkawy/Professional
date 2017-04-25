@@ -1,0 +1,70 @@
+/*
+Theme Name: Alaa
+Theme URI:
+Author: Alaa Elmekkawy
+Author URI: http://alaaelmekkawy.com/
+Description: the first theme.
+Version: 1.0
+  License:
+License URI:
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, translation-ready
+
+*/
+/*
+    General
+=============================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+body {
+  height: 2000px;
+  font-family: 'Raleway', sans-serif; }
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.table-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle; }
+
+/*
+    header
+=============================================
+*/
+.header-container {
+  height: 400px;
+  background: #000;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #ffffff;
+  background-position: center center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative; }
+
+.backlay {
+  padding: 0; }
+
+.nav-content {
+  position: absolute;
+  top: 0; }
+
+/*
+Standerd post format
+=======================
+*/
+h1.entry-title {
+  font-size: 48px;
+  font-weight: 200;
+  margin: 50px 0 20px; }
+
+/*# sourceMappingURL=style.css.map */

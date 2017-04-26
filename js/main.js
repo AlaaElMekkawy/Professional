@@ -250,6 +250,12 @@ jQuery(document).ready(function ($) {
         //Reference http://www.jssor.com/development/slider-with-slideshow-no-jquery.html
         //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
         var jssor_2_SlideshowTransitions = [
+            {$Duration:600,$Delay:100,$Cols:10,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Opacity:2},
+            {$Duration:600,x:1,$Delay:50,$Cols:8,$Rows:4,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$OutQuad},$Opacity:2},
+            {$Duration:1000,y:1,$Easing:$Jease$.$InBounce},
+            {$Duration:400,$Delay:100,$Cols:10,$Clip:2,$Formation:$JssorSlideshowFormations$.$FormationStraight},
+            {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.2,0.8],$Top:[0.2,0.8]},$Formation:$JssorSlideshowFormations$.$FormationSwirl,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Assembly:260,$Round:{$Left:0.8,$Top:2.5}},
+
             {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
                         {$Duration:1000,x:-1,y:2,$Rows:2,$Zoom:11,$Rotate:1,$SlideOut:true,$Assembly:2049,$ChessMode:{$Row:15},$Easing:{$Left:$Jease$.$InExpo,$Top:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InExpo},$Opacity:2,$Round:{$Rotate:0.85}},
             {$Duration:1200,x:4,$Cols:2,$Zoom:11,$SlideOut:true,$Assembly:2049,$ChessMode:{$Column:15},$Easing:{$Left:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear},$Opacity:2},
@@ -269,11 +275,64 @@ jQuery(document).ready(function ($) {
         var jssor_2_SlideoTransitions = [
 
 
-            [{b:-1,d:1,c:{t:-400}},{b:200,d:2000,c:{t:400},e:{c:{t:6}}}],
-            [{b:-1,d:1,c:{t:-300}},{b:2200,d:1500,c:{t:300},e:{c:{t:6}}},{b:3700,d:1500,c:{t:-300},e:{c:{t:6}}}],
-            [{b:-1,d:1,c:{t:-280}},{b:5200,d:1500,c:{t:400},e:{c:{t:6}}}],
-            [{b:-1,d:1,o:-1},{b:6700,d:1500,y:-300,o:1,e:{y:27, o:6}}],
-            [{b:-1,d:1,o:-1},{b:6700,d:1500,y:-300,o:1,e:{y:27, o:6}}]
+            [{b:-1,d:1,c:{t:-400}},{b:2200,d:2000,c:{t:400},e:{c:{t:6}}}],// 1
+            [{b:-1,d:1,c:{t:-300}},{b:4200,d:1500,c:{t:300},e:{c:{t:6}}},{b:5700,d:1500,c:{t:-300},e:{c:{t:6}}}],// 2
+            [{b:-1,d:1,c:{t:-280}},{b:7200,d:1500,c:{t:400},e:{c:{t:6}}}],// 3
+            [{b:-1,d:1,o:-1},{b:8700,d:1500,y:-300,o:1,e:{y:27, o:6}}],//4
+            [{b:-1,d:1,o:-1},{b:10200,d:1500,y:-200,o:1,e:{y:27, o:6}}],//5
+
+
+            [{b:1000,d:1000,x:-300, y:-160,e:{x:6,y:6}}], //5
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:0,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6, o:6}},{b:1100,d:1000,sX:-.8, sY:-.8,e:{sX:6, sY:6}},{b:2300,d:1000,r:-360,x:-150,e:{r:6,x:6}} ],//6
+            [{b:-1,d:1,c:{x:200}},{b:2300,d:1000,c:{x:-200},e:{c:{x:6}}}], //7
+
+            [{b:4300,d:1000,x:-300, y:-60,e:{x:6,y:6}}], //8
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:3300,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6, o:6}},{b:4400,d:1000,sX:-.8, sY:-.8,e:{sX:6, sY:6}},{b:5600,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//9
+            [{b:-1,d:1,c:{x:200}},{b:5600,d:1000,c:{x:-200},e:{c:{x:6}}}], //10
+
+
+            [{b:7600,d:1000,x:-300, y:40,e:{x:6,y:6}}], //11
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:6600,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6, o:6}},{b:7700,d:1000,sX:-.8, sY:-.8,e:{sX:6, sY:6}},{b:8900,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//12
+            [{b:-1,d:1,c:{x:200}},{b:8900,d:1000,c:{x:-200},e:{c:{x:6}}}], //13
+
+
+            [{b:10900,d:1000,x:-300, y:140,e:{x:6,y:6}}], //14
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:9900,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6, o:6}},{b:11000,d:1000,sX:-.85, sY:-.88,e:{sX:6, sY:6}},{b:12200,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//15
+            [{b:-1,d:1,c:{x:200}},{b:12200,d:1000,c:{x:-200},e:{c:{x:6}}}], //16
+
+
+
+
+
+
+
+            [{b:14200,d:1000,x:500, y:-160,e:{x:6,y:6}}], //17
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:13200,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6,o:6}},{b:14300,d:1000,sX:-.8, sY:-.85,e:{sX:6, sY:6}},{b:15500,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//18
+            [{b:-1,d:1,c:{x:200}},{b:15500,d:1000,c:{x:-200},e:{c:{x:6}}}], //19
+
+
+            [{b:17500,d:1000,x:500, y:-60,e:{x:6,y:6}}], //20
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:16500,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6, o:6}},{b:17600,d:1000,sX:-.8, sY:-.85,e:{sX:6, sY:6}},{b:18800,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//21
+            [{b:-1,d:1,c:{x:200}},{b:18800,d:1000,c:{x:-200},e:{c:{x:6}}}], //22
+
+
+            [{b:20800,d:1000,x:500, y:40,e:{x:6,y:6}}], //23
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:19800,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6,o:6}},{b:20900,d:1000,sX:-.8, sY:-.85,e:{sX:6, sY:6}},{b:22100,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//24
+            [{b:-1,d:1,c:{x:200}},{b:22100,d:1000,c:{x:-200},e:{c:{x:6}}}], //25
+
+
+            [{b:24100,d:1000,x:500, y:140,e:{x:6,y:6}}], //26
+            [{b:-1,d:1,o:-1, sX:-1, sY:-1},{b:23100,d:1000,sX:1, sY:1,o:1,r:360,e:{sX:6,sY:6,r:6,o:6}},{b:24200,d:1000,sX:-.8, sY:-.85,e:{sX:6, sY:6}},{b:25400,d:1000,x:-150,r:-360,e:{r:6,x:6}} ],//27
+            [{b:-1,d:1,c:{x:200}},{b:25400,d:1000,c:{x:-200},e:{c:{x:6}}}], //28
+
+
+                [{b:-1,d:1,o:-1},{b:26400,d:1000,o:1,e:{y:27, o:6}}],
+                [{b:-1,d:1,o:-1},{b:27400,d:1000,o:1,e:{y:27, o:6}}],
+                [{b:-1,d:1,o:-1},{b:28400,d:1000,o:1,e:{y:27, o:6}}],
+                [{b:-1,d:1,o:-1},{b:29400,d:1000,o:1,e:{y:27, o:6}}],
+                [{b:-1,d:1,o:-1},{b:30400,d:1000,o:1,e:{y:27, o:6}}],
+
+            [{b:-1,d:1,c:{t:-500}},{b:200,d:2000,c:{t:500},e:{c:{t:6}}}] //34
 
 
 
@@ -292,9 +351,8 @@ jQuery(document).ready(function ($) {
                 $Class: $JssorCaptionSlideo$,
                 $Transitions: jssor_2_SlideoTransitions,
                 $Breaks: [
-                    [{d:2000,b:10000,t:2}],
-                    [{d:2000,b:100,t:2}],
-                    [{d:2000,b:22700}]
+                    [{d:3000,b:11700,t:2}],
+                    [{d:2000,b:32400,t:2}]
                 ]
             },
             $ArrowNavigatorOptions: {

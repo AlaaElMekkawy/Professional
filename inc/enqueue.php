@@ -20,7 +20,7 @@ function alaa_theme_scripts()
     wp_enqueue_style('alaa_slick_css');
     wp_enqueue_style('alaa_slick_theme_css');
     wp_enqueue_style('alaa_fancybox_css');
-    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Righteous|Squada+One");
+    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Righteous|Squada+One|Great+Vibes");
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('alaa_style_css');
 

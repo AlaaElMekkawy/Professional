@@ -80,14 +80,21 @@
             <img data-u="image" src="<?php echo get_template_directory_uri() .'/images/present/5.png' ?>"  />
 
 
-            <div data-u="caption" data-t="0" style="position:absolute;top:130px;left:400px;width:400px;height:50px;z-index:0;font-size:30px; color:#eee;font-weight:700;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 3px;">front-end developer</div>
+            <div data-u="caption" data-t="34" style="position:absolute;top:90px;left:200px;width:500px;height:50px;z-index:0;font-size:30px; color:#eee;font-weight:100;line-height:50px; text-align:left; font-family:  'Great Vibes', cursive, sans-serif; letter-spacing: 3px;"><i style="font-size: 20px;" class="fa fa-quote-left" aria-hidden="true"></i>
+                Hi I'm Alaa Elmekkawy <i style="font-size: 20px;" class="fa fa-quote-right" aria-hidden="true"></i>
+            </div>
+
+            <h1 data-u="caption" data-t="0" style="position:absolute;top:150px;left:400px;width:400px;height:50px;z-index:0;font-size:30px; color:#eee;font-weight:700;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 3px;">front-end developer</h1>
 
 
-            <div data-u="caption" data-t="1" style="position:absolute;top:180px;left:500px;width:200px;height:50px;z-index:0;font-size:22px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 2px;">web design</div>
+            <div data-u="caption" data-t="1" style="position:absolute;top:210px;left:500px;width:200px;height:50px;z-index:0;font-size:22px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 2px;">web design</div>
 
-            <div data-u="caption" data-t="2" style="position:absolute;top:180px;left:460px;width:280px;height:50px;z-index:0;font-size:22px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 1px;">web development</div>
+            <div data-u="caption" data-t="2" style="position:absolute;top:210px;left:460px;width:280px;height:50px;z-index:0;font-size:22px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 1px;">web development</div>
 
-            <div data-u="caption" data-t="3" style="position:absolute;top:550px;left:300px;width:600px;height:50px;z-index:0;font-size:20px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:uppercase; font-family: Ubuntu, sans-serif; letter-spacing: 1px;">html/css/sass/jquery/javaScript/php/wordpress</div>
+            <div data-u="caption" data-t="3" style="position:absolute;top:550px;left:300px;width:600px;height:50px;z-index:0;font-size:20px; color:#eee;font-weight:400;line-height:50px; text-align:center;text-transform:capitalize; font-family: Ubuntu, sans-serif; letter-spacing: 1px;">Working as a freelancer</div>
+
+   <div data-u="caption" data-t="4" style="position:absolute;top:550px;left:600px;width:600px;height:50px;z-index:0;font-size:25px; color:#eee;font-weight:100;line-height:50px; text-align:left; font-family:  'Great Vibes', cursive, sans-serif; letter-spacing: 3px;"><i style="font-size: 16px;" class="fa fa-quote-left" aria-hidden="true"></i>
+      I love what i'm doing  and doing what I love <i style="font-size: 16px;" class="fa fa-quote-right" aria-hidden="true"></i> </div>
 
 
 
@@ -97,25 +104,88 @@
 
         <!--start slider 2 -->
 
-        <div data-b="1" data-p="170.00">
-            <img data-u="image" src="<?php echo get_template_directory_uri() .'/images/present/7.png' ?>" />
+       <div data-b="1" data-p="170.00">
+            <img data-u="image" src="<?php echo get_template_directory_uri() .'/images/present/02.jpg' ?>" />
 
+
+            <div data-u="caption" data-t="5" data-3d="1" style="position:absolute;top:225px;left:480px;width:150px;height:50px;z-index:0;">
+
+                <img data-u="caption" data-t="6" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/html.png' ?>" />
+
+                <div data-u="caption" data-t="7" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">HTML5</div>
+            </div>
+
+
+           <div data-u="caption" data-t="8" data-3d="1" style="position:absolute;top:225px;left:480px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="9" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/CSS.png' ?>" />
+
+                <div data-u="caption" data-t="10" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">CSS3</div>
+            </div>
+
+
+
+           <div data-u="caption" data-t="11" data-3d="1" style="position:absolute;top:225px;left:480px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="12" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/sass.png' ?>" />
+
+                <div data-u="caption" data-t="13" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">SASS</div>
+            </div>
+
+           <div data-u="caption" data-t="14" data-3d="1" style="position:absolute;top:225px;left:480px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="15" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/jquery.png' ?>" />
+
+                <div data-u="caption" data-t="16" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">Jquery</div>
+            </div>
+
+
+     <div data-u="caption" data-t="17" data-3d="1" style="position:absolute;top:225px;left:450px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="18" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/js.png' ?>" />
+
+                <div data-u="caption" data-t="19" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">JavaScript</div>
+            </div>
+
+     <div data-u="caption" data-t="20" data-3d="1" style="position:absolute;top:225px;left:450px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="21" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/wordpress.png' ?>" />
+
+                <div data-u="caption" data-t="22" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">WordPress</div>
+            </div>
+
+ <div data-u="caption" data-t="23" data-3d="1" style="position:absolute;top:225px;left:450px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="24" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/php.png' ?>" />
+
+                <div data-u="caption" data-t="25" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">PHP</div>
+            </div>
+
+<div data-u="caption" data-t="26" data-3d="1" style="position:absolute;top:225px;left:450px;width:150px;height:50px;z-index:0;">
+                <img data-u="caption" data-t="27" data-to="50% 50%" style="position:absolute;top:-103px;left:50px;width:256px;height:256px;z-index:0;" src="<?php echo get_template_directory_uri() .'/images/present/04/git.png' ?>" />
+
+                <div data-u="caption" data-t="28" style="position:absolute;top:0px;left:2px;width:150px;height:50px;z-index:0;font-size:25px;color:#333;line-height:50px;text-align:left;">GIT</div>
+            </div>
+
+
+
+
+                <div data-u="caption" data-t="29" style="position:absolute;top:100px;left:450px;width:300px;height:50px;z-index:0;font-size:18px;color:#333;line-height:20px;text-align:center;">Give your site a beauty touch and make it search optimization</div>
+
+                <div data-u="caption" data-t="30" style="position:absolute;top:170px;left:450px;width:300px;height:50px;z-index:0;font-size:30px;color:#333;line-height:50px;text-align:center;">Responsive</div>
+
+                <div data-u="caption" data-t="31" style="position:absolute;top:220px;left:450px;width:300px;height:50px;z-index:0;font-size:30px;color:#333;line-height:50px;text-align:center;">Creative</div>
+
+                <div data-u="caption" data-t="32" style="position:absolute;top:270px;left:450px;width:300px;height:50px;z-index:0;font-size:30px;color:#333;line-height:50px;text-align:center;">Unique</div>
+
+                <div data-u="caption" data-t="33" style="position:absolute;top:320px;left:450px;width:300px;height:50px;z-index:0;font-size:30px;color:#333;line-height:50px;text-align:center;">SEO</div>
 
 
         </div>
 
 
-
-
-
-
     </div>
+
+
     <!-- Bullet Navigator -->
     <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-        <!-- bullet navigator item prototype -->
         <div data-u="prototype" style="width:16px;height:16px;"></div>
     </div>
     <!-- Arrow Navigator -->
-    <span data-u="arrowleft" class="jssora22l" style="top:0px;left:10px;width:40px;height:58px;" data-autocenter="2"></span>
-    <span data-u="arrowright" class="jssora22r" style="top:0px;right:10px;width:40px;height:58px;" data-autocenter="2"></span>
+    <!--<span data-u="arrowleft" class="jssora22l" style="top:0px;left:10px;width:40px;height:58px;" data-autocenter="2"></span>
+    <span data-u="arrowright" class="jssora22r" style="top:0px;right:10px;width:40px;height:58px;" data-autocenter="2"></span>-->
 </div>
